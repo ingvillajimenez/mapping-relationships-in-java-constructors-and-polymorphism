@@ -14,4 +14,8 @@ public class SmartSpeaker {
     public void wakePhrase() {
         System.out.format("Activates on saying %s's wake phrase.\n", productName);
     }
+
+    public void printDetails() {
+        System.out.println("SmartSpeaker class: " + getProductName());
+    }
 }

@@ -3,32 +3,46 @@ package com.skillsoft.inheritanceandinterfaces;
 public class Main {
     public static void main(String[] args) {
 
-        SmartSpeaker smartSpeaker = new SmartSpeaker("Google Nest");
+        SmartSpeaker googleNestAudio = new GoogleNestAudio();
         SmartSpeaker amazonEcho = new AmazonEcho();
         SmartSpeaker appleHomePod = new AppleHomePod();
+        SmartSpeaker sonosOne = new SonosOne();
 
-        System.out.println("smartSpeaker name: " + smartSpeaker.getProductName());
-        System.out.println("amazonEcho name: " + amazonEcho.getProductName());
-        System.out.println("appleHomePod name: " + appleHomePod.getProductName());
+
+        System.out.println("amazonEcho wakePhrase():");
+        amazonEcho.wakePhrase();
+
+        System.out.println("sonosOne wakePhrase():");
+        sonosOne.wakePhrase();
+
+        System.out.println("googleNestAudio wakePhrase():");
+        googleNestAudio.wakePhrase();
+
+        System.out.println("appleHomePod wakePhrase():");
+        appleHomePod.wakePhrase();
 
         System.out.println();
 
-        smartSpeaker.wakePhrase();
-        amazonEcho.wakePhrase();
-        appleHomePod.wakePhrase();
+        amazonEcho.printDetails();
+        sonosOne.printDetails();
+        googleNestAudio.printDetails();
+        appleHomePod.printDetails();
 
-//        SmartSpeaker smartSpeaker = new SmartSpeaker("Google Nest");
-//        AmazonEcho amazonEcho = new AmazonEcho();
-//        AppleHomePod appleHomePod = new AppleHomePod();
+//        SmartSpeaker googleNestAudio = new GoogleNestAudio();
+//        SmartSpeaker amazonEcho = new AmazonEcho();
+//        SmartSpeaker appleHomePod = new AppleHomePod();
+//        SmartSpeaker sonosOne = new SonosOne();
 //
-//        System.out.println("smartSpeaker name: " + smartSpeaker.getProductName());
+//        System.out.println("googleNestAudio name: " + googleNestAudio.getProductName());
 //        System.out.println("amazonEcho name: " + amazonEcho.getProductName());
 //        System.out.println("appleHomePod name: " + appleHomePod.getProductName());
+//        System.out.println("sonosOne name: " + sonosOne.getProductName());
 //
 //        System.out.println();
 //
-//        smartSpeaker.wakePhrase();
-//        amazonEcho.wakePhrase();
+//        googleNestAudio.wakePhrase();
 //        appleHomePod.wakePhrase();
+//        amazonEcho.wakePhrase();
+//        sonosOne.wakePhrase();
     }
 }

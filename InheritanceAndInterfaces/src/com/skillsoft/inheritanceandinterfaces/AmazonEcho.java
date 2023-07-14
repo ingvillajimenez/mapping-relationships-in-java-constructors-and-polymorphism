@@ -1,12 +1,18 @@
 package com.skillsoft.inheritanceandinterfaces;
 
-public class AmazonEcho extends SmartSpeaker {
+public class AmazonEcho extends AlexaEnabledSpeaker {
 
     public AmazonEcho() {
         super("Amazon Echo");
     }
 
-    public void wakePhrase() {
-        System.out.println("Wake phrase: Alexa");
+    @Override
+    public void printDetails() {
+        System.out.println("AmazonEcho class: " + getProductName());
     }
+
+    //    @Override
+//    public void wakePhrase() {
+//        System.out.println("Wake phrase: Alexa");
+//    }
 }

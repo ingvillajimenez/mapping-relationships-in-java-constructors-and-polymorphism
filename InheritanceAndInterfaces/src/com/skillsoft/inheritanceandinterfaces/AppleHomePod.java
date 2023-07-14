@@ -5,7 +5,8 @@ public class AppleHomePod extends SmartSpeaker {
         super("Apple HomePod");
     }
 
-    public void wakePhrase() {
-        System.out.println("Wake phrase: Hey Siri");
-    }
+//    @Override
+//    public void siri() {
+//        System.out.println("Wake phrase: Hey Siri");
+//    }
 }
