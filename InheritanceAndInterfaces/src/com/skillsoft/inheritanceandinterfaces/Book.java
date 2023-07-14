@@ -4,8 +4,10 @@ public class Book {
 
     private String name = "unknown";
 
-    public Book() {
-        System.out.println("Book: default no-argument constructor");
+    public Book(String name) {
+        this.name = name;
+
+        System.out.println("Book: parameterized constructor");
     }
 
     public String getName() {
