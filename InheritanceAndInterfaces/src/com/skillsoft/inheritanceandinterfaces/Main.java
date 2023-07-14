@@ -9,10 +9,10 @@ public class Main {
         Book effectiveJava = new Book("Effective Java");
         System.out.println("effectiveJava name: " + effectiveJava.getName());
 
-        SelfHelpBook algorithmsToLiveBy = new SelfHelpBook();
+        SelfHelpBook algorithmsToLiveBy = new SelfHelpBook("Algorithms to Live By");
         System.out.println("algorithmsToLiveBy name: " + algorithmsToLiveBy.getName());
 
-        SelfHelpBook twoAwesomeHours = new SelfHelpBook();
+        SelfHelpBook twoAwesomeHours = new SelfHelpBook("Two Awesome Hours");
         System.out.println("twoAwesomeHours name: " + twoAwesomeHours.getName());
     }
 }
