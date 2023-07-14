@@ -3,46 +3,23 @@ package com.skillsoft.inheritanceandinterfaces;
 public class Main {
     public static void main(String[] args) {
 
-        Book coreJava = new Book("Core Java", "Cay S. Horstmann");
-        System.out.println("coreJava: " + coreJava);
+        SmartSpeaker smartSpeaker = new SmartSpeaker("Google Nest");
+        AmazonEcho amazonEcho = new AmazonEcho();
+        AppleHomePod appleHomePod = new AppleHomePod();
+
+        System.out.println("smartSpeaker name: " + smartSpeaker.getProductName());
+        System.out.println("amazonEcho name: " + amazonEcho.getProductName());
+        System.out.println("appleHomePod name: " + appleHomePod.getProductName());
 
         System.out.println();
 
-
-        SelfHelpBook thePowerOfHabit = new SelfHelpBook("The Power of Habit",
-                "Charles Duhigg", 450);
-        System.out.println("thePowerOfHabit: " + thePowerOfHabit);
+        amazonEcho.alexa();
+        appleHomePod.siri();
 
         System.out.println();
 
-//        Book headFirstJava = new Book();
-//        System.out.println("headFirstJava: " + headFirstJava);
-//
-//        System.out.println();
-//
-//        Book effectiveJava = new Book("Effective Java");
-//        System.out.println("effectiveJava" + effectiveJava);
-//
-//        System.out.println();
-//
-//        Book coreJava = new Book("Core Java", "Cay S. Horstmann");
-//        System.out.println("coreJava: " + coreJava);
-//
-//        System.out.println();
-//
-//        SelfHelpBook algorithmsToLiveBy = new SelfHelpBook();
-//        System.out.println("algorithmsToLiveBy: " + algorithmsToLiveBy);
-//
-//        System.out.println();
-//
-//        SelfHelpBook twoAwesomeHours = new SelfHelpBook("Two Awesome Hours");
-//        System.out.println("twoAwesomeHours: " + twoAwesomeHours);
-//
-//        System.out.println();
-//
-//        SelfHelpBook thePowerOfHabit = new SelfHelpBook("The Power of Habit", "Charles Duhigg");
-//        System.out.println("thePowerOfHabit: " + thePowerOfHabit);
-//
-//        System.out.println();
+        smartSpeaker.wakePhrase();
+        amazonEcho.wakePhrase();
+        appleHomePod.wakePhrase();
     }
 }
