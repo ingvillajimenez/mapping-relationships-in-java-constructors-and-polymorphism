@@ -1,41 +1,46 @@
 package com.skillsoft.inheritanceandinterfaces;
 
 public class SelfHelpBook extends Book {
-    public SelfHelpBook() {
-        super("some_random_name");
 
+    private int numberOfPages = -1;
+
+    public SelfHelpBook() {
         System.out.println("SelfHelpBook()");
     }
 
     public SelfHelpBook(String name) {
-        super();
-
-        setName(name);
-
+        super(name);
         System.out.println("SelfHelpBook(String name)");
     }
 
-//    public SelfHelpBook() {
-//        System.out.println("SelfHelpBook()");
-//
-//        super();
-//    }
-//
-//    public SelfHelpBook(String name) {
-//        System.out.println("SelfHelpBook(String name)");
-//
-//        super(name);
-//    }
+    public SelfHelpBook(String name, String author) {
+        super(name, author);
+        System.out.println("SelfHelpBook(String name, String author)");
+    }
 
-//    public SelfHelpBook() {
-//        super();
-//
+    public SelfHelpBook(String name, String author, int numberOfPages) {
+        super(name, author);
+
+        this.numberOfPages = numberOfPages;
+
+        System.out.println("SelfHelpBook(String name, String author, int numberOfPages)");
+    }
+
+    public int getNumberOfPages() {
+        return numberOfPages;
+    }
+
+    //    public SelfHelpBook() {
 //        System.out.println("SelfHelpBook()");
 //    }
 //
 //    public SelfHelpBook(String name) {
 //        super(name);
-//
 //        System.out.println("SelfHelpBook(String name)");
+//    }
+//
+//    public SelfHelpBook(String name, String author) {
+//        super(name, author);
+//        System.out.println("SelfHelpBook(String name, String author)");
 //    }
 }
