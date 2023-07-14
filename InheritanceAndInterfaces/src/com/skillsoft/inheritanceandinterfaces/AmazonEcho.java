@@ -6,7 +6,7 @@ public class AmazonEcho extends SmartSpeaker {
         super("Amazon Echo");
     }
 
-    public void alexa() {
+    public void wakePhrase() {
         System.out.println("Wake phrase: Alexa");
     }
 }
