@@ -2,6 +2,10 @@ package com.skillsoft.inheritanceandinterfaces;
 
 public class Measure {
 
+    public int perimeter(int a) {
+        return (4 * a);
+    }
+
     public int perimeter(int a, int b) {
         return (2 * (a + b));
     }
@@ -19,6 +23,27 @@ public class Measure {
 //    }
 
     public int area(int a, int b) {
+        System.out.println("area(int a, int b)");
+        return (a * b);
+    }
+
+    public float area(float a, float b) {
+        System.out.println("area(float a, float b)");
+        return (a * b);
+    }
+
+    public double area(double a, double b) {
+        System.out.println("area(double a, double b)");
+        return (a * b);
+    }
+
+    public float area(float a, int b) {
+        System.out.println("area(float a, int b)");
+        return (a * b);
+    }
+
+    public float area(int a, float b) {
+        System.out.println("area(int a, float b)");
         return (a * b);
     }
 
